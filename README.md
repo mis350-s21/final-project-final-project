@@ -23,16 +23,18 @@ The description would be a good start for your team to set the main requirements
 
 USe this description to build the ER Diagram for your project then start putting together requirements in the form of tickets. Then start implementing the system and updating the tickets as you get more ideas on how to improve the system. Do your best to implement as much of the requirements as you can. Be sure to leave the tickets that you do not complete in the ticket management system as it will indicate how much you have thought about the system.
 ## Requirement
-- [x] Customers can show the items, choose it , and put it in the cart
+- [x] Customers can show the product, and choose it 
 
-- [x] Customers make a payment if they want the products 
+- [x] employee search in the inventory if the products are available
 
-- [x] Customers put the address to deliver their items 
+- [x] customers put the product in the cart
 
+- [x] the order has special name and number 
 
+- [x] customers put the address to deliver their order 
+- [x] customers choose the right time for delivery
 
-
-
+- [x] the  store provides the process of choosing to pay via Knet or cash 
 
 
 
