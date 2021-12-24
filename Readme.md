@@ -3,6 +3,8 @@
 
 
 ## Requirement
+- [x] website will consists open greeting page that view products with prices , details and so on
+
 - [x] Customers will be shown a welcome screen and the products will be shown to him 
 
 - [x] Customers can show the product, and choose it 
