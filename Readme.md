@@ -30,4 +30,6 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 
 
-
+## Names of the project team members:
+- Sara Alhajri
+- Zainab Altahou
