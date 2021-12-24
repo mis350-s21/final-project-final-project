@@ -3,6 +3,8 @@
 
 
 ## Requirement
+- [x] Customers will be shown a welcome screen and the products will be shown to him 
+
 - [x] Customers can show the product, and choose it 
 
 - [x] employee search in the inventory if the products are available
