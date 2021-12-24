@@ -22,24 +22,6 @@ We are also interested in ways in which to promote sales of our products. Custom
 The description would be a good start for your team to set the main requirements. It represents the bare minimum that should be included in the system. You can go beyond what the description provides for additional credits, but be sure to cover the customer requirements.
 
 USe this description to build the ER Diagram for your project then start putting together requirements in the form of tickets. Then start implementing the system and updating the tickets as you get more ideas on how to improve the system. Do your best to implement as much of the requirements as you can. Be sure to leave the tickets that you do not complete in the ticket management system as it will indicate how much you have thought about the system.
-## Requirement
-- [x] Customers can show the product, and choose it 
-
-- [x] employee search in the inventory if the products are available
-
-- [x] customers put the product in the cart
-
-- [x] the order has special name and number 
-
-- [x] customers put the address to deliver their order 
-- [x] customers choose the right time for delivery
-
-- [x] the  store provides the process of choosing to pay via Knet or cash 
-
-
-
-## ER-Diagram
-![DBMS ER diagram (UML notation)](https://user-images.githubusercontent.com/93180512/147368867-9502c6ed-bd28-49a6-9150-5855ef72ee75.png)
 
 
 
