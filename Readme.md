@@ -6,17 +6,15 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 
 ## Requirement
-- [x] website will consists open greeting page that view products with prices , details and so on
+- [x] Customer will be open greeting page that show product in schedule that present price,ingredients and stock .
 
-- [x] Customers will be shown a welcome screen and the products will be shown to him 
+- [x] Customers can search products and filter the best seller  .  
 
-- [x] Customers can show the product, and choose it 
+- [x] Customer fills information related to his address, name, number and address . 
 
-- [x] employee search in the inventory if the products are available
+- [x] Customer will choose the appropriate payment method for him
 
-- [x] customers put the product in the cart
-
-- [x] the order has special name and number 
+- [x] Customer will gain the rest that show the detalis about the bill .
 
 - [x] customers put the address to deliver their order 
 - [x] customers choose the right time for delivery
