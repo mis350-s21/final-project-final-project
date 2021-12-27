@@ -12,7 +12,11 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 - [x] Customers can search products and filter the best seller  .  
 
-- [x] Customer fills information related to his  name, number and address . 
+- [x] Customer fills information related to his  name, number and address .
+
+- [x]  Customer can re order the old order by one click.
+
+- [x] Customer can Save his addresses if he want to order again from us.
 
 - [x] Customer will choose the appropriate payment method for him such as Knet or cash . 
 
@@ -23,6 +27,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
 - [x] Customer can contact us on the support page for his suggestions, comments and complaints . 
 
 - [x] Our site provides a loyalty card to our loyal customers .
+
 - [x] Order page will show the customer the choice of delivery time . 
 
 ## ER-Diagram
