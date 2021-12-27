@@ -6,7 +6,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 
 ## Requirement
-- [x] Customer will be open greeting page that show product in schedule that present price, ingredients and stock .
+- [x] Customer will be open greeting page that show product in schedule that present price, ingredients and quantity .
 
 - [x] Customers can search products and filter the best seller  .  
 
@@ -16,7 +16,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 - [x] Customer will gain the reset that show the detalis about the bill .
 
-- [x] customers put the address to deliver their order 
+- [x] Inventory will calculate the quantities of available products .
 - [x] customers choose the right time for delivery
 
 - [x] the  store provides the process of choosing to pay via Knet or cash 
