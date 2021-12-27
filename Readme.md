@@ -8,6 +8,8 @@ We will build e-commerce website about small store that provide healthy snacks. 
 ## Requirement
 - [x] Customer will be open greeting page that show product in schedule that present price, ingredients and quantity .
 
+- [x] ؤustomer can interact with our accounts on social media on the greeting page . 
+
 - [x] Customers can search products and filter the best seller  .  
 
 - [x] Customer fills information related to his  name, number and address . 
@@ -16,12 +18,11 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 - [x] Customer will gain the reset that show the detalis about the bill .
 
-- [x] Inventory will calculate the quantities of available products .
-- [x] customers choose the right time for delivery
+- [x] Inventory will calculate the quantities of available products . 
 
-- [x] the  store provides the process of choosing to pay via Knet or cash 
+- [x] Customer can contact us on the support page for his suggestions, comments and complaints . 
 
-
+- [x] Our site provides a loyalty card to our loyal customers .
 
 ## ER-Diagram
 
