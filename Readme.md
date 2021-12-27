@@ -26,9 +26,10 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 
 ## ER-Diagram
-![DBMS ER diagram (UML notation)](https://user-images.githubusercontent.com/93180512/147368867-9502c6ed-bd28-49a6-9150-5855ef72ee75.png)
 
 
+
+![DBMS ER diagram (UML notation) (1)](https://user-images.githubusercontent.com/93180512/147454969-6b52bd2f-76fb-4a75-ad43-147ddd39efc4.png)
 
 ## Names of the project team members:
 - Sara Alhajri
