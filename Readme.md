@@ -30,6 +30,10 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 ![DBMS ER diagram (UML notation) (1)](https://user-images.githubusercontent.com/93180512/147454969-6b52bd2f-76fb-4a75-ad43-147ddd39efc4.png)
 
+## Bouns:
+- [x] customer will receive an email to confirm the order.
+- [ ] 
+
 ## Names of the project team members:
 - Sara Alhajri
 - Zainab Altahou
