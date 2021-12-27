@@ -23,6 +23,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
 - [x] Customer can contact us on the support page for his suggestions, comments and complaints . 
 
 - [x] Our site provides a loyalty card to our loyal customers .
+- [x] Order page will show the customer the choice of delivery time . 
 
 ## ER-Diagram
 
