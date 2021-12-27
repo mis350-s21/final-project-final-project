@@ -8,7 +8,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
 ## Requirement
 - [x] Customer will be open greeting page that show product in schedule that present price, ingredients and quantity .
 
-- [x] ؤustomer can interact with our accounts on social media on the greeting page . 
+- [x] Customer can interact with our accounts on social media on the greeting page . 
 
 - [x] Customers can search products and filter the best seller  .  
 
