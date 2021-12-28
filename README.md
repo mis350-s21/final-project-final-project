@@ -7,24 +7,34 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 ## Requirement
 - ORDER: 
+
+
   - [x] Customer will be open greeting page that show product in schedule that present price, ingredients and quantity .
 
   - [x] Customers can search products and filter the best seller  .  
 
-  - [x] Customer fills information related to his  name, number and address .
+  - [x] when Customer complet order his required to sign up in the website to input the information related to his name, phone number, e-mail and address .
 
-  - [x]  Customer can re order the old order by one click.
+  - [x] Customer can re order the old order by one click by login in the website.
 
-  - [x] Customer can Save his addresses if he want to order again from us.
+  - [x] Every one Customer has multiple address so he can edit his addresses if he want to order again from us.
 
-  - [x] Customer will choose the appropriate payment method for him such as Knet or cash . 
+  - [x] when the Customer want to check out he will go to the payment page he will choose the appropriate payment method for him such as Knet or cash . 
 
-  - [x] Customer will gain the reset that show the detalis about the bill .
+  - [x] After payment process Customer will gain the receipt that show the details about the bill.
+
+
+
  - [x] Inventory will calculate the quantities of available products . 
 
-- [x] Customer can contact us on the support page for his suggestions, comments and complaints . 
+- CRM:
 
-- [x] Our site provides a loyalty card to our loyal customers .
+  - [x] Customer can contact us on the support page for his suggestions and complaints. 
+  - [x] when the customer want to suggest us he will click on suggestions
+  - [x] If the customer wants to complain about the order, he go to the support page and he can click on the complaints box and select the menu (product problem or delivery problem) then put his comments.
+  - [x]  If the customer wants to suggest us, he go to the support page and he can click on the suggestions box then put his comments.
+
+  - [x] Our site provides a loyalty card to our loyal customers .
 
 - [x] Order page will show the customer the choice of delivery time . 
 
