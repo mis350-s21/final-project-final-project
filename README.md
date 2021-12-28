@@ -6,23 +6,21 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 
 ## Requirement
-- [x] Customer will be open greeting page that show product in schedule that present price, ingredients and quantity .
+- ORDER: 
+  - [x] Customer will be open greeting page that show product in schedule that present price, ingredients and quantity .
 
-- [x] Customer can interact with our accounts on social media on the greeting page . 
+  - [x] Customers can search products and filter the best seller  .  
 
-- [x] Customers can search products and filter the best seller  .  
+  - [x] Customer fills information related to his  name, number and address .
 
-- [x] Customer fills information related to his  name, number and address .
+  - [x]  Customer can re order the old order by one click.
 
-- [x]  Customer can re order the old order by one click.
+  - [x] Customer can Save his addresses if he want to order again from us.
 
-- [x] Customer can Save his addresses if he want to order again from us.
+  - [x] Customer will choose the appropriate payment method for him such as Knet or cash . 
 
-- [x] Customer will choose the appropriate payment method for him such as Knet or cash . 
-
-- [x] Customer will gain the reset that show the detalis about the bill .
-
-- [x] Inventory will calculate the quantities of available products . 
+  - [x] Customer will gain the reset that show the detalis about the bill .
+ - [x] Inventory will calculate the quantities of available products . 
 
 - [x] Customer can contact us on the support page for his suggestions, comments and complaints . 
 
