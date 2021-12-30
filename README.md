@@ -22,10 +22,9 @@ We will build e-commerce website about small store that provide healthy snacks. 
   - [x] when the Customer want to check out he will go to the payment page he will choose the appropriate payment method for him such as Knet or cash . 
 
   - [x] After payment process Customer will gain the receipt that show the details about the bill.
+  - [x] Order page will show the customer the choice of delivery time . 
 
 
-
- - [x] Inventory will calculate the quantities of available products . 
 
 - CRM:
 
@@ -36,8 +35,10 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
   - [x] Our site provides a loyalty card to our loyal customers .
 
-- [x] Order page will show the customer the choice of delivery time . 
 
+- Inventory:
+
+- [x] If the customer buys his products, inventory will be calculated = Stock reserve - Quantity
 ## ER-Diagram
 
 
