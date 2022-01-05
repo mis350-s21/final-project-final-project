@@ -12,6 +12,7 @@ class Order(models.Model):
     address = models.TextField()
     delivery_date= models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    image=models.CharField(max_length=100)
 
-    def __str__(self):
-        return f"{self.item_name}: created at {self.delivery_date}, cuctomer address {self.address}"
+    # def __str__(self):
+    #     return f"{self.item_name}: created at {self.delivery_date}, cuctomer address {self.address}"
