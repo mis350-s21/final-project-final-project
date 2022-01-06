@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>healty snacks</h1>
+<h2>welcome</h2>
+<div class="topnav">
+  <a href="#about">About</a><br>
+  <a href="#contact">Contact</a>
+</div>
+<form action="." method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <label for="item_name">Search By Name </label>
+  <input type="search" name="item_name" >
+  <a href="/healthyapp/search/{{products.xid}}"><button type="button">Search</button></a>
+
+
+   <table border="1"> 
+    <tr bgcolor="LightGrey">
+      <td align="center">Image</td>
+      <td align="center">Item Name</td>
+      <td align="center">Description</td>
+      <td align="center">Pric</td>
+      <td align="center">Notes</td>
+      <td align="center"> Add Record</td>
+    </tr>
+
+    {% for p in pro %}
+    <tr>
+      <td align="center"><img src="{{p.image}}" alt="{{p.item_name}} width="100" height="200""></td>
+      <td align="center">{{p.item_name}}</td>
+      <td align="center">{{p.description}}</td>
+      <td align="center">{{p.price}}kd</td>
+      <td align="center">{{p.notes}}</td>
+      <td align="center"><a href="/healthyapp/"><button type="button">Add Record</button></a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  
+  </body>
+  </html>
