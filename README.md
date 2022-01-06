@@ -8,9 +8,9 @@ We will build e-commerce website about small store that provide healthy snacks. 
 # Requirement
 
 ## - Products:
+- [x] Customer will be open greeting page that show product in schedule that present item name, price, description,image and quantity .
 - [x] Customers can search products and filter the best seller  .  
 
-- [x] Customer will be open greeting page that show product in schedule that present item name, price, description,image and quantity .
 
 ## - ORDER: 
 
