@@ -5,14 +5,14 @@
 We will build e-commerce website about small store that provide healthy snacks.  Our website is a retail website. We will buy multiple snacks from multiples suppliers.  The customer will visit our website to purchase snacks, then the customer will chooses the method to payment process. After that the customer will chooses the delivery time. Finally, customer will gain the invoice.
 
 
-## Requirement
+# Requirement
 
--Products:
+## - Products:
 - [x] Customers can search products and filter the best seller  .  
 
 - [x] Customer will be open greeting page that show product in schedule that present item name, price, description,image and quantity .
 
-- ORDER: 
+## - ORDER: 
 
   - [x] when Customer complet order his required to sign up in the website to input the information related to his name, phone number, e-mail and address .
 
@@ -25,7 +25,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
   - [x] After payment process Customer will gain the receipt that show the details about the bill.
   - [x] Order page will show the customer the choice of delivery time . 
 
-- comments:
+## - comments:
 
   - [x] Customer can contact us on the support page for his suggestions and complaints. 
   - [x] when the customer want to suggest us he will click on suggestions
