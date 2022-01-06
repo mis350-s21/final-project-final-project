@@ -6,12 +6,13 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 
 ## Requirement
+
+-Products:
+- [x] Customers can search products and filter the best seller  .  
+
+- [x] Customer will be open greeting page that show product in schedule that present item name, price, description,image and quantity .
+
 - ORDER: 
-
-
-  - [x] Customer will be open greeting page that show product in schedule that present price, ingredients and quantity .
-
-  - [x] Customers can search products and filter the best seller  .  
 
   - [x] when Customer complet order his required to sign up in the website to input the information related to his name, phone number, e-mail and address .
 
@@ -24,9 +25,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
   - [x] After payment process Customer will gain the receipt that show the details about the bill.
   - [x] Order page will show the customer the choice of delivery time . 
 
-
-
-- CRM:
+- comments:
 
   - [x] Customer can contact us on the support page for his suggestions and complaints. 
   - [x] when the customer want to suggest us he will click on suggestions
@@ -35,10 +34,6 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
   - [x] Our site provides a loyalty card to our loyal customers .
 
-
-- Inventory:
-
-- [x] If the customer buys his products, inventory will be calculated = Stock reserve - Quantity
 ## ER-Diagram
 
 
@@ -47,7 +42,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
 ## Bouns:
 - [x] customer will receive an email to confirm the order.
-- [ ] 
+
 
 ## Names of the project team members:
 - Sara Alhajri
