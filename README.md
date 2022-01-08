@@ -14,6 +14,7 @@
   - [x] when Customer complet order his required to add in add record.
   - [x] when the Customer want to check out he will gain the receipt that show the number of item and total price.
   - [x] Customer required to put his name ,address, city ,state, zip to place his order.
+  - [x] customer can choose the payment method such as mastercard, Knet
  
 
 ## - comments:
