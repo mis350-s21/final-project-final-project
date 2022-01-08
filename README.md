@@ -1,53 +1,40 @@
 # Healthy snacks website 
 
-## Tasks
-
-We will build e-commerce website about small store that provide healthy snacks.  Our website is a retail website. We will buy multiple snacks from multiples suppliers.  The customer will visit our website to purchase snacks, then the customer will chooses the method to payment process. After that the customer will chooses the delivery time. Finally, customer will gain the invoice.
 
 
-## Requirement
-- ORDER: 
+# Requirement
+
+## - Products:
+- [x] Customer will be open greeting page that show product in schedule that present item name, price, description and image.
+- [x] Customers can search products by item name.
 
 
-  - [x] Customer will be open greeting page that show product in schedule that present price, ingredients and quantity .
+## - ORDER: 
 
-  - [x] Customers can search products and filter the best seller  .  
+  - [x] when Customer complet order his required to add in add record.
+  - [x] when the Customer want to check out he will gain the receipt that show the number of item and total price.
+  - [x] Customer required to put his name ,address, city ,state, zip to place his order.
+  - [x] customer can choose the payment method such as mastercard, Knet
+ 
 
-  - [x] when Customer complet order his required to sign up in the website to input the information related to his name, phone number, e-mail and address .
+## - comments:
 
-  - [x] Customer can re order the old order by one click by login in the website.
+  - [x] Customer can contact us on the contact page for his suggestions and complaints. 
+  - [x] Customer can put his Name, Email and Comment.
 
-  - [x] Every one Customer has multiple address so he can edit his addresses if he want to order again from us.
-
-  - [x] when the Customer want to check out he will go to the payment page he will choose the appropriate payment method for him such as Knet or cash . 
-
-  - [x] After payment process Customer will gain the receipt that show the details about the bill.
-  - [x] Order page will show the customer the choice of delivery time . 
-
-
-
-- CRM:
-
-  - [x] Customer can contact us on the support page for his suggestions and complaints. 
-  - [x] when the customer want to suggest us he will click on suggestions
-  - [x] If the customer wants to complain about the order, he go to the support page and he can click on the complaints box and select the menu (product problem or delivery problem) then put his comments.
-  - [x]  If the customer wants to suggest us, he go to the support page and he can click on the suggestions box then put his comments.
-
-  - [x] Our site provides a loyalty card to our loyal customers .
-
-
-- Inventory:
-
-- [x] If the customer buys his products, inventory will be calculated = Stock reserve - Quantity
 ## ER-Diagram
 
 
 
-![DBMS ER diagram (UML notation) (1)](https://user-images.githubusercontent.com/93180512/147454969-6b52bd2f-76fb-4a75-ad43-147ddd39efc4.png)
+![DBMS ER diagram (UML notation) (2)](https://user-images.githubusercontent.com/93180512/148661836-72e09118-d139-4454-a3a7-553f55b0a66b.png)
+
 
 ## Bouns:
-- [x] customer will receive an email to confirm the order.
-- [ ] 
+- [x] text color in HTML .
+- [x] we put imge in the schedule resize the imge index.
+- [x] bootstrapcd to make style for the website.
+
+
 
 ## Names of the project team members:
 - Sara Alhajri

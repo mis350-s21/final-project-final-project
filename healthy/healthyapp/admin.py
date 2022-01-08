@@ -1,11 +1,10 @@
 from django.contrib import admin
-from .models import Order
+from.models import Products
+
 # Register your models here.
+class ProductsAdmin(admin.ModelAdmin):
+    list_display=('title', 'price', 'description', 'image')
+    search_fields = ['item_name',]
 
-class OrderAdmin(admin.ModelAdmin):
-    list_display = ('item_name','status','delivery_date')
-    list_filter =  ('item_name', )
-    search_fields = ['item_name', 'address',]
+admin.site.register(Products, ProductsAdmin)
 
-
-admin.site.register(Order, OrderAdmin)
