@@ -14,4 +14,4 @@ class Order(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
 
     def __str__(self):
-        return f"{self.item_name}: created at {self.delivery_date}, cuctomer address {self.address}"
+     return f"{self.item_name}: created at {self.delivery_date}, cuctomer address {self.address}"
