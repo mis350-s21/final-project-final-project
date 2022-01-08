@@ -16,6 +16,7 @@ We will build e-commerce website about small store that provide healthy snacks. 
 
   - [x] when Customer complet order his required to add in add record.
   - [x] when the Customer want to check out he will gain the receipt that show the number of item and total price.
+  - [x] Customer required to put his name ,address, city ,state, zip to place his order.
  
 
 ## - comments:
