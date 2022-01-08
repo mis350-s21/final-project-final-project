@@ -1,8 +1,5 @@
 # Healthy snacks website 
 
-## Tasks
-
-We will build e-commerce website about small store that provide healthy snacks.  Our website is a retail website. We will buy multiple snacks from multiples suppliers.  The customer will visit our website to purchase snacks, then the customer will chooses the method to payment process. After that the customer will chooses the delivery time. Finally, customer will gain the invoice.
 
 
 # Requirement
