@@ -19,7 +19,7 @@
 ## - comments:
 
   - [x] Customer can contact us on the contact page for his suggestions and complaints. 
-  -[x] Customer can put his Name, Email and Comment.
+  - [x] Customer can put his Name, Email and Comment.
 
 ## ER-Diagram
 
