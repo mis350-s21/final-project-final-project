@@ -25,7 +25,8 @@
 
 
 
-![DBMS ER diagram (UML notation) (1)](https://user-images.githubusercontent.com/93180512/147454969-6b52bd2f-76fb-4a75-ad43-147ddd39efc4.png)
+![DBMS ER diagram (UML notation) (2)](https://user-images.githubusercontent.com/93180512/148661836-72e09118-d139-4454-a3a7-553f55b0a66b.png)
+
 
 ## Bouns:
 - [x] text color in HTML .
