@@ -1,6 +1,5 @@
 from django import forms
-from django.db.models.fields import files
-from .models import Products , Payment
+from .models import Products , Comments,Payment
 
 
 
@@ -13,3 +12,11 @@ class PaymentForm(forms.ModelForm):
     class Meta:
         model = Payment
         fields = ['name', 'email', 'mobile', 'method']
+
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = Comments
+        fields = '__all__'
+
+

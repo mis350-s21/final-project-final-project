@@ -1,6 +1,6 @@
 from django.shortcuts import render , redirect
-from .models import Products , Cart 
-from .forms import  PaymentForm
+from .models import Products , Cart ,Comments
+from .forms import  PaymentForm, ContactForm
 
 # Create your views here.
 def greeting(request):
@@ -61,3 +61,15 @@ def checkout(request):
   }
   return render(request,'checkout.html', context)
 
+
+def contact(request):
+  leaveComment = ContactForm(request.POST)
+  if leaveComment.is_valid():
+    leaveComment.save()
+
+  contactForm = {
+    'form': ContactForm
+  }
+
+
+  return render(request, 'contact.html', contactForm)
