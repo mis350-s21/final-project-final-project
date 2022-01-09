@@ -4,17 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
+    <title>receipt</title>
   </head>
   <body>
+     <h1>receipt</h1>
     <h1>You Ordered {{total}} Items</h1>
-    <h2>Total Price is {{totalprice}}</h2>
-
-    <form method="POST">
-      {% csrf_token %}
-      <br />
-      {{form}}
-      <button type="submit">Checkout</button>
-    </form>
+    <h2>Total Price is :{{totalprice}}Kd</h2>
+    <div class="row">
+      <div class="col-md-12">
+            <h1 style="color:rgb(255, 2, 36);" >Checkout form</h1>
+            <form method="POST">
+             {% csrf_token %}
+            <div class="form-group col-md-2"> 
+              <input  type="hidden" class="form-control" id="items" name="items">
+            </div>
+            </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Name</label>
+              <input id="name" name="name" type="text" class="form-control" id="inputEmail4" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Email</label>
+              <input id="email" name="email"type="email" class="form-control" id="inputPassword4" placeholder="example@email.com">
+            </div>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputAddress">Address</label>
+            <input id="address" name="address" type="text" class="form-control" id="inputAddress" placeholder="Your Current Address">
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input id="city" name="city" type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <input id="state" name="state" type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input id="zipcode" name="zipcode" type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Amount To Be Paid: <br>{{totalprice}}Kd</label>
+              
+            </div>
+          </div>
+          <div class="form-group col-md-12"> 
+            <button type="submit" class="btn btn-primary">Place Order</button>
+          </div>
+          
+          <h2>  شكرا لكم</h2>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
   </body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/materia/bootstrap.min.css" integrity="sha384-B4morbeopVCSpzeC1c4nyV0d0cqvlSAfyXVfrPJa25im5p+yEN/YmhlgQP/OyMZD" crossorigin="anonymous">
 </html>
