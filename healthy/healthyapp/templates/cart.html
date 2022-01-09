@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Cart</h1>
+    <a href="{% url 'checkout'%}">
+      <button type="button">Checkout</button>
+    </a>
+    <br />
+    <br />
+    {% if items %}
+    <table border="1">
+      <tr bgcolor="LightGrey">
+        <td align="center">Image</td>
+        <td align="center">Item Name</td>
+        <td align="center">Description</td>
+        <td align="center">Pric</td>
+      </tr>
+
+      {% for item in items %}
+      <tr>
+        <td align="center">
+          <img src="{{item.product.image}}" alt="{{item.product.title}}
+          width="100" height="200"">
+        </td>
+        <td align="center">{{item.product.title}}</td>
+        <td align="center">{{item.product.description}}</td>
+        <td align="center">{{item.product.price}}kd</td>
+      </tr>
+      <h3>{{item.total}}</h3>
+      {% endfor %}
+    </table>
+    {% endif %}
+  </body>
+</html>

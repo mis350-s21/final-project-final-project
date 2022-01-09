@@ -1,5 +1,6 @@
-from django.shortcuts import render
-from .models import Products
+from django.shortcuts import render , redirect
+from .models import Products , Cart 
+from .forms import  PaymentForm
 
 # Create your views here.
 def greeting(request):
@@ -24,3 +25,39 @@ def search(request):
       }
 
     return render(request, ' search_product.html', context)
+
+def cart(request):
+  if request.method == 'POST':
+    itemId = int(request.POST.get('item_id'))
+    addItem = Cart(product_id = itemId)
+    addItem.save()
+  cartItems = Cart.objects.all()
+  context = {
+    'items': cartItems
+  }
+  
+
+  return render(request, 'cart.html', context)
+
+def checkout(request):
+
+  pay = PaymentForm(request.POST or None)
+  if pay.is_valid():
+    pay.save()
+    return redirect('home')
+
+  cartItems = Cart.objects.all()
+  itemsCount = cartItems.count()
+  
+  total = 0
+  for item in cartItems:
+    total += float(item.product.price)
+
+  print(total)
+  context = {
+    'total': itemsCount,
+    'totalprice': total,
+    'form': PaymentForm
+  }
+  return render(request,'checkout.html', context)
+
