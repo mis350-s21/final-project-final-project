@@ -13,7 +13,7 @@ class Products(models.Model):
 
     def __str__(self):
         return f"{self.title}"
- checkout-13
+ 
 class Cart(models.Model):
     product = models.ForeignKey(Products, on_delete=models.CASCADE)
 
