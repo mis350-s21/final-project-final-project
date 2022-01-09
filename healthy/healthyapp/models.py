@@ -13,6 +13,7 @@ class Products(models.Model):
 
     def __str__(self):
         return f"{self.title}"
+ checkout-13
 class Cart(models.Model):
     product = models.ForeignKey(Products, on_delete=models.CASCADE)
 
@@ -27,3 +28,4 @@ class Payment(models.Model):
     email = models.CharField(max_length=100)
     mobile = models.BigIntegerField()
     method = models.IntegerField(choices=METHOD, default=0)
+
