@@ -24,7 +24,7 @@ def search(request):
         "products": products
       }
 
-    return render(request, ' search_product.html', context)
+    return render(request, 'search_product.html', context)
 
 def cart(request):
   if request.method == 'POST':
