@@ -34,11 +34,9 @@
         <td align="center">{{p.price}}kd</td>
         <td align="center">{{p.notes}}</td>
         <td align="center">
-          <form action="{% url 'cart'%}" method="POST">
-            {% csrf_token %}
-            <input type="hidden" name="item_id" value="{{p.id}}" />
-            <button type="submit">Add Record</button>
-          </form>
+          <a href="{% url 'product' p.id %}">
+            <button type="button">Detail</button>
+          </a>
         </td>
       </tr>
       {% endfor %}

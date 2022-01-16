@@ -20,6 +20,8 @@
         <td align="center">Item Name</td>
         <td align="center">Description</td>
         <td align="center">Pric</td>
+        <td align="center">quantity</td>
+        <td align="center">total</td>
       </tr>
 
       {% for item in items %}
@@ -31,6 +33,9 @@
         <td align="center">{{item.product.title}}</td>
         <td align="center">{{item.product.description}}</td>
         <td align="center">{{item.product.price}}kd</td>
+        <td align="center">
+          {% widthratio item.quantity 1 item.product.price %}
+        </td>
       </tr>
       <h3>{{item.total}}</h3>
       {% endfor %}
