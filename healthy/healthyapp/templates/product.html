@@ -80,18 +80,30 @@
       {% for p in products %}
       <tr>
         <td align="center">
-          <img src="{{p.image}}" alt="{{p.item_name}} width="100" height="200"">
+          <img src="{{p.image}}" alt="{{p.title}} width="100" height="200"">
         </td>
         <td align="center">{{p.title}}</td>
         <td align="center">{{p.description}}</td>
         <td align="center">{{p.price}}kd</td>
         <td align="center">{{p.notes}}</td>
         <td align="center">
-          <form action="{% url 'cart'%}" method="POST">
-            {% csrf_token %}
-            <input type="hidden" name="item_id" value="{{p.id}}" />
-            <button type="submit">Add Record</button>
-          </form>
+          <a href="{% url 'product' p.id %}">
+            <button type="button">Detail</button>
+          </a>
+        </td>
+      </tr> %}
+      <tr>
+        <td align="center">
+          <img src="{{p.image}}" alt="{{p.title}} width="100" height="200"">
+        </td>
+        <td align="center">{{p.title}}</td>
+        <td align="center">{{p.description}}</td>
+        <td align="center">{{p.price}}kd</td>
+        <td align="center">{{p.notes}}</td>
+        <td align="center">
+          <a href="{% url 'product' p.id %}">
+            <button type="button">Detail</button>
+          </a>
         </td>
       </tr>
       {% endfor %}
