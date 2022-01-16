@@ -11,6 +11,10 @@ def greeting(request):
 
   return render(request, 'product.html', context)
 
+def about(request):
+  data={}
+  return render(request, 'about.html', data)
+
 def search(request):
   products = Products.objects.all()
   if 'item_name' in request.POST:
