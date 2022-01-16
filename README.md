@@ -5,16 +5,23 @@
 # Requirement
 
 ## - Products:
-- [x] Customer will be open greeting page that show product in schedule that present item name, price, description and image.
+- [x] Customer will be open greeting page that show product in schedule that present item name, price, description, notes and image.
 - [x] Customers can search products by item name.
+- [x] Customers can see the details of products when he click in the details button.
 
-
+## - Admin:
+- [x] the adminstrator can see the customers who registered in the website.
+- [x] the admin can see cart object the customer name ,product name and quantity.
+- [x] the adminstrator can see all comments from the user.
+- [x] the admin can checks the payment details name ,email ,mobile phone and the method of payment .
+- [x] the admin can add new products with the image of proudcts , price, name and description.
 ## - ORDER: 
-
-  - [x] when Customer complet order his required to add in add record.
-  - [x] when the Customer want to check out he will gain the receipt that show the number of item and total price.
+  - [x] the cutomer required to register in the website.
+  - [x] if customer want to order he must login to his account.
+  - [x] when Customer complet order his required to add quantity of products in the add record button.
+  - [x] when the Customer want to check out he will gain the receipt that show the quantity and total price.
   - [x] Customer required to put his name ,address, city ,state, zip to place his order.
-  - [x] customer can choose the payment method such as mastercard, Knet
+  - [x] customer can choose the payment method such as mastercard and cash.
  
 
 ## - comments:
