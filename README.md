@@ -8,6 +8,7 @@
 - [x] Customer will be open greeting page that show product in schedule that present item name, price, description, notes and image.
 - [x] Customers can search products by item name.
 - [x] Customers can see the details of products when he click in the details button.
+- [x] Customers can read about company establishment and the idea of the website.
 
 ## - Admin:
 - [x] the adminstrator can see the customers who registered in the website.
