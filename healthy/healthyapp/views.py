@@ -1,6 +1,10 @@
 from django.shortcuts import render , redirect
 from .models import Products , Cart ,Comments
 from .forms import  PaymentForm, ContactForm
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate,login,logout
+
 
 # Create your views here.
 def greeting(request):
@@ -39,6 +43,15 @@ def search(request):
 
     return render(request, 'search_product.html', context)
 
+def product(request, id):
+  print(id)
+  product = Products.objects.get(id=id)
+  context = {
+    'product': product
+  }
+  return render(request, 'product_detail.html', context)
+
+
 def cart(request):
   if request.method == 'POST':
     itemId = int(request.POST.get('item_id'))
@@ -51,6 +64,22 @@ def cart(request):
   
 
   return render(request, 'cart.html', context)
+@login_required(login_url='login')
+def cart(request):
+  userId = request.user.id
+  if request.method == 'POST':
+    itemId = int(request.POST.get('item_id'))
+    quantity = int(request.POST.get('quantity'))
+    addItem = Cart(customer_id = userId, product_id = itemId, quantity = quantity)
+    addItem.save()
+  cartItems = Cart.objects.filter(customer_id = userId)
+
+  context = {
+    'items': cartItems
+  }
+
+  return render(request, 'cart.html', context)
+
 
 def checkout(request):
 
@@ -86,3 +115,32 @@ def contact(request):
 
 
   return render(request, 'contact.html', contactForm)
+
+def register(request):
+  form = UserCreationForm()
+  if request.method == 'POST':
+    form = UserCreationForm(request.POST)
+    if form.is_valid():
+      form.save()
+      return redirect('login')
+  context = {
+    'form': form
+  }
+  return render(request, 'register.html', context)
+
+def login_request(request):
+  if request.method == 'POST':
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+
+    user = authenticate(request, username=username, password=password)
+    if user is not None:
+      login(request, user)
+      return redirect('home')
+    else:
+      print('not valid')
+  return render(request, 'login.html')
+
+def logout_request(request):
+  logout(request)
+  return redirect('home')
