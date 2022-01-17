@@ -18,6 +18,15 @@ def greeting(request):
 def about(request):
   data={}
   return render(request, 'about.html', data)
+def product(request, id):
+  print(id)
+  product = Products.objects.get(id=id)
+  context = {
+    'product': product
+  }
+  return render(request, 'product_detail.html', context)
+
+
 
 def search(request):
   products = Products.objects.all()
