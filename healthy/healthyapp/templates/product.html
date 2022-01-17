@@ -24,15 +24,26 @@
          
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}">login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'logout' %}">logout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'register' %}">Register</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'contact' %}">contact</a>
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control me-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            
           </form>
         </div>
       </div>
@@ -40,8 +51,6 @@
 
     
     <div class="topnav">
-      <a href="{% url 'home' %}">Home</a>
-      <br /><a href="{% url 'contact' %}">Contact</a>
       <br /><a href="{% url 'cart' %}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
       </svg></a><br />
@@ -66,49 +75,44 @@
       </div>
     </div>
     <br />
+    <body>
+     
+  
+      <table border="1">
+        <tr bgcolor="LightGrey">
+          <td align="center">Image</td>
+          <td align="center">Item Name</td>
+          <td align="center">Description</td>
+          <td align="center">Pric</td>
+          <td align="center">Notes</td>
+          <td align="center">Add Record</td>
+        </tr>
+  
+        {% for p in products %}
+        <tr>
+          <td align="center">
+            <img src="{{p.image}}" alt="{{p.title}} width="100" height="200"">
+          </td>
+          <td align="center">{{p.title}}</td>
+          <td align="center">{{p.description}}</td>
+          <td align="center">{{p.price}}kd</td>
+          <td align="center"><form action="{% url 'cart'%}" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="ADD Notes">
+            </form>
+  
+          </td>
+          <td align="center">
+            <a href="{% url 'product' p.id %}">
+              <button type="button">Detail</button>
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </body>
 
-    <table border="1">
-      <tr bgcolor="LightGrey">
-        <td align="center">Image</td>
-        <td align="center">Item Name</td>
-        <td align="center">Description</td>
-        <td align="center">Pric</td>
-        <td align="center">Notes</td>
-        <td align="center">Add Record</td>
-      </tr>
-
-      {% for p in products %}
-      <tr>
-        <td align="center">
-          <img src="{{p.image}}" alt="{{p.title}} width="100" height="200"">
-        </td>
-        <td align="center">{{p.title}}</td>
-        <td align="center">{{p.description}}</td>
-        <td align="center">{{p.price}}kd</td>
-        <td align="center">{{p.notes}}</td>
-        <td align="center">
-          <a href="{% url 'product' p.id %}">
-            <button type="button">Detail</button>
-          </a>
-        </td>
-      </tr> %}
-      <tr>
-        <td align="center">
-          <img src="{{p.image}}" alt="{{p.title}} width="100" height="200"">
-        </td>
-        <td align="center">{{p.title}}</td>
-        <td align="center">{{p.description}}</td>
-        <td align="center">{{p.price}}kd</td>
-        <td align="center">{{p.notes}}</td>
-        <td align="center">
-          <a href="{% url 'product' p.id %}">
-            <button type="button">Detail</button>
-          </a>
-        </td>
-      </tr>
-      {% endfor %}
-    </table>
-  </body>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/materia/bootstrap.min.css" integrity="sha384-B4morbeopVCSpzeC1c4nyV0d0cqvlSAfyXVfrPJa25im5p+yEN/YmhlgQP/OyMZD" crossorigin="anonymous">
 
 </html>

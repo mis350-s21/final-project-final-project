@@ -124,3 +124,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTHENTICATION_BACKENDS = [
+    #: Uncomment the following line for enabling LDAP authentication
+    'pootle.core.auth.ldap_backend.LdapBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]

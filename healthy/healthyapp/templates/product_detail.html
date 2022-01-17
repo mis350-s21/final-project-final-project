@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="{{product.image}}" alt="{{product.title}} width="100"
+    height="200"">
+    <br />
+    <div>
+      <h1>Title:</h1>
+      <h4>{{product.title}}</h4>
+    </div>
+
+    <div>
+      <h1>Description:</h1>
+      <h4>{{product.description}}</h4>
+    </div>
+    <div>
+      <h1>Price:</h1>
+      <h4>{{product.price}}kd</h4>
+    </div>
+    <form action="{% url 'cart'%}" method="POST">
+      {% csrf_token %}
+      <input type="number" min="1" name="quantity" />
+      <input type="hidden" name="item_id" value="{{product.id}}" />
+      <button type="submit">Add Record</button>
+    </form>
+  </body>
+</html>

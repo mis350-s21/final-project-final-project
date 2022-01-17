@@ -3,7 +3,7 @@ from .models import Products , Cart ,Comments
 from .forms import  PaymentForm, ContactForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate,login,logout
 
 
 # Create your views here.
@@ -33,6 +33,15 @@ def search(request):
       }
 
     return render(request, 'search_product.html', context)
+
+def product(request, id):
+  print(id)
+  product = Products.objects.get(id=id)
+  context = {
+    'product': product
+  }
+  return render(request, 'product_detail.html', context)
+
 
 def cart(request):
   if request.method == 'POST':
