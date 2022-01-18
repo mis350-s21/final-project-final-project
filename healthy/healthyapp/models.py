@@ -40,6 +40,3 @@ class Comments(models.Model):
         return f"{self.name}"
 
 
-
-#class User(models.Model):
-  #  mobile = models.BigIntegerField()
