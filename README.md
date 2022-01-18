@@ -35,7 +35,8 @@
 
 
 
-![DBMS ER diagram (UML notation) (2)](https://user-images.githubusercontent.com/93180512/148661836-72e09118-d139-4454-a3a7-553f55b0a66b.png)
+
+![DBMS ER diagram (UML notation) (3)](https://user-images.githubusercontent.com/93180512/149880434-7c58e7fb-120f-4522-aca2-e42ee529edbc.png)
 
 
 ## Bouns:
