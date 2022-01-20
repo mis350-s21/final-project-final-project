@@ -80,6 +80,11 @@ def cart(request):
 
   return render(request, 'cart.html', context)
 
+def update_quantity(request, id):
+  quantity = request.POST.get('quantity')
+  Cart.objects.filter(product_id=id, customer_id = request.user.id).update(quantity = quantity)
+
+
 
 def checkout(request):
 

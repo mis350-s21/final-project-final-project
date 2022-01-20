@@ -34,8 +34,25 @@
         <td align="center">{{item.product.description}}</td>
         <td align="center">{{item.product.price}}kd</td>
         <td align="center">
+        </td>
+        <form
+            method="POST"
+            action="{% url 'update_quantity' item.product.id %}"
+          >
+            {% csrf_token %}
+            <input
+              type="number"
+              name="quantity"
+              min="1"
+              value="{{item.quantity}}"
+            />
+            <input type="submit" value="update" />
+          </form>
+        </td>
+        <td align="center">
           {% widthratio item.quantity 1 item.product.price %}
         </td>
+      </tr>
       </tr>
       <h3>{{item.total}}</h3>
       {% endfor %}
